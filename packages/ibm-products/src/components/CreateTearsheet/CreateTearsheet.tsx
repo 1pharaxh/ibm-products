@@ -222,9 +222,10 @@ export let CreateTearsheet = forwardRef(
           initialStep
         );
         setCurrentStep(Number(initialStep + numberOfHiddenSteps));
-      } else {
-        setCurrentStep(firstIncludedStep);
-      }
+      } 
+      // else {
+      //   setCurrentStep(firstIncludedStep);
+      // }
     }, [stepData, firstIncludedStep, lastIncludedStep, initialStep, open]);
 
     useCreateComponentFocus({
